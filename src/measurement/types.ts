@@ -160,6 +160,8 @@ export type HttpResult = TestResult & {
 	timings?: Record<string, number | null>;
 	tls?: {
 		authorized: boolean;
+		protocol: string;
+		cipherName: string;
 		createdAt?: string;
 		expiresAt?: string;
 		authorizationError?: string;
